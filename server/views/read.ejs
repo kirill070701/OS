@@ -9,36 +9,32 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/api/read" method="POST" class="form">
+    <form action="/read" method="POST" class="form">
         <div class="dataName">
-            <<!--label>Имя</label>-->
+            <label>Имя</label>
             <input type="text" name="name" class="name" id="name">
         </div>
-        <!--<div class="dataFamily">
+        <div class="dataFamily">
             <label>Фамилия</label>
-            <input type="text" class="family" id="family">
+            <input type="text" name="family" class="family" id="family">
         </div>
         <div class="dataPatronymic">
             <label>Отчество</label>
-            <input type="text" class="patronymic" id="patronymic">
+            <input type="text" name="patronymic" class="patronymic" id="patronymic">
         </div>
         <div class="dataBirth">
             <label>Дата рождения</label>
-            <input type="text" class="birth" id="birth">
+            <input type="date" name="birth" class="birth" id="birth">
         </div>
         <div class="dataPosition">
             <label>Должность</label>
-            <input type="text" class="position" id="position">
+            <input type="text" name="position" class="position" id="position">
         </div>
         <div class="dataExperience">
             <label>Стаж</label>
-            <input type="text" class="experience" id="experience">
-        </div>-->
-        <input type="submit" class="button" value="Продолжить">
-    </form>
-    <form action='/readPost/' method="POST">
-        <p><input type="text" value="Написать письмо"></p>
-        <input type="submit" class="button" value="fdsg">
+            <input type="text" name="experience" class="experience" id="experience">
+        </div>
+        <input type="submit" class="button" name="button" value="Продолжить">
     </form>
 </body>
 </html>

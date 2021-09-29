@@ -14,14 +14,22 @@
             <tr>
                 <td>id</td>
                 <td>Имя</td>
-                <td>Возраст</td>
+                <td>Фамилия</td>
+                <td>Отчество</td>
+                <td>Дата рождения</td>
+                <td>Должность</td>
+                <td>Стаж</td>
             </tr>
         </thead>
         <% for(var i = 0; i< result.length; i++){ %>
             <tr>
                 <td><%= result[i]._id%></td>
                 <td><%= result[i].name%></td>
-                <td><%= result[i].age%></td>
+                <td><%= result[i].family%></td>
+                <td><%= result[i].patronymic%></td>
+                <td><%= result[i].birth%></td>
+                <td><%= result[i].position%></td>
+                <td><%= result[i].experience%></td>
             </tr>
         <% } %>
     </table>
