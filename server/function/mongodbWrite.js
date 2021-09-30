@@ -12,10 +12,6 @@ async function run() {
         const db = mongoClient.db("db");
         const collection = db.collection("users");
         results = await collection.find().toArray();
-
-        //console.log(results);
-        
-         
     }catch(err) {
         console.log(err);
     } finally {

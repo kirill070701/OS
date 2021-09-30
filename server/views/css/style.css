@@ -13,3 +13,9 @@ body{
     width: 10vw;
     height: 5vh;
 }
+.buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
