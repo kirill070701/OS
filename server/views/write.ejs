@@ -19,6 +19,7 @@
                 <td>Дата рождения</td>
                 <td>Должность</td>
                 <td>Стаж</td>
+                <td></td>
             </tr>
         </thead>
         <% for(var i = 0; i< result.length; i++){ %>
@@ -30,8 +31,16 @@
                 <td><%= result[i].birth%></td>
                 <td><%= result[i].position%></td>
                 <td><%= result[i].experience%></td>
+                <td class="buttons">
+
+                    <input type="button" value="Удалить" id="delete<%= i%>" class="writeData">
+                    <input type="button" value="Изменить" id="change<%= i%>" class="writeData">
+                </td>
             </tr>
         <% } %>
-    </table>
+        <script>
+            var numbers = "<%= result.length%>"
+        </script>
+    <script src="js/buttons.js"></script>
 </body>
 </html>
