@@ -9,7 +9,7 @@ async function run(number) {
         await mongoClient.connect();
         const db = mongoClient.db("db");
         const collection = db.collection("users");
-        results = await collection.findOneAndUpdate({_id:number[0]}, {$set:{name:number[1], family:number[2], patronymic:number[3], birth:number[4], position:number[5], experience:number[6]}})
+        results = await collection.findOneAndUpdate({_id:Number(number[0])}, {$set:{name:number[1], family:number[2], patronymic:number[3], birth:number[4], position:number[5], experience:number[6]}})
         //console.log(results)
     }catch(err) {
         console.log(err);

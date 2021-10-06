@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="button" class="writeData" value="Главная страница" onclick="window.location.href = '/'">
     <script src="js/buttons.js"></script>
     <table class="tableData" id="tableData">
         <thead>
@@ -20,7 +21,7 @@
                 <td>Дата рождения</td>
                 <td>Должность</td>
                 <td>Стаж</td>
-                <td></td>
+                <td class="battons"></td>
             </tr>
         </thead>
         <% for(var i = 0; i< result.length; i++){ %>
@@ -32,7 +33,7 @@
                 <td><%= result[i].birth%></td>
                 <td><%= result[i].position%></td>
                 <td><%= result[i].experience%></td>
-                <td class="buttons">
+                <td class="tdButton">
                     <input type="button" value="Удалить" id="<%= result[i]._id%>" class="delete writeData" onclick="buttonsDelete(this)">
                     <input type="button" value="Изменить" id="<%= result[i]._id%>" class="chenge writeData" onclick="buttonsChange(this)">
                 </td>
@@ -41,10 +42,6 @@
         <script>
             var numbers = "<%= result.length%>"
             var a = "<%- result[0].name%>"
-            console.log(a)
-            /*for (let i = 0; i < result.length; i++) {
-                console.log("<%= result[1].name%>")
-            }*/
             
         </script>
     

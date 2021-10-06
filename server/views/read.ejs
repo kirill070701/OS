@@ -9,7 +9,12 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="button" class="writeData" value="Главная страница" onclick="window.location.href = '/'">
     <form action="/read" method="POST" class="form">
+        <div class="dataName">
+            <label>ID</label>
+            <input type="text" name="id" class="name" id="name">
+        </div>
         <div class="dataName">
             <label>Имя</label>
             <input type="text" name="name" class="name" id="name">

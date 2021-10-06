@@ -14,8 +14,7 @@ app.get('/change', async(req, res)=>{
 app.post('/change', (req, res)=>{
     let data = [req.body.id, req.body.name, req.body.family, req.body.patronymic, req.body.birth, req.body.position, req.body.experience]
     mongoPost.server(data)
-    res.render('readPost')
-    console.log(req.body.button)
+    res.render('changePost')
 })
 
 module.exports = app

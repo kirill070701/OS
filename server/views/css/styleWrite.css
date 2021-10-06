@@ -10,3 +10,10 @@
 .tableData tr{
     background-color: black;
 }
+
+.tdButton{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}

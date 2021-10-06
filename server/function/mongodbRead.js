@@ -9,7 +9,7 @@ async function run(data) {
         const db = mongoClient.db("db");
         const collection = db.collection("users");
         const count = await collection.countDocuments();
-        let user = {_id: (count + 1),name: data[0], family: data[1], patronymic: data[2], birth: data[3], position: data[4],experience: data[5]};
+        let user = {_id: Number(data[6]),name: data[0], family: data[1], patronymic: data[2], birth: data[3], position: data[4],experience: data[5]};
         await collection.insertOne(user);
         console.log('сохранение выполнено')
     }catch(err) {

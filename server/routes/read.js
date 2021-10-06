@@ -10,7 +10,7 @@ app.get('/read', (req,res)=>{
 })
 
 app.post('/read', (req, res)=>{
-    let a = [req.body.name, req.body.family, req.body.patronymic, req.body.birth, req.body.position, req.body.experience]
+    let a = [req.body.name, req.body.family, req.body.patronymic, req.body.birth, req.body.position, req.body.experience, req.body.id]
     mongodb.server(a)
     res.render('readPost')
     console.log(req.body.button)
